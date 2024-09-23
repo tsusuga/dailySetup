@@ -4,6 +4,9 @@ from dotenv import load_dotenv
 import os
 import webbrowser
 
+#AutoHotKeyをsuspendする
+pyautogui.hotkey('ctrl', 'alt', 's')
+
 # winボタンプッシュ
 pyautogui.press('win')
 time.sleep(1)
@@ -19,7 +22,5 @@ pyautogui.press('enter')
 # outlookを表示
 webbrowser.open("https://outlook.office.com/mail/")
 webbrowser.open("https://b.hatena.ne.jp/hotentry/it")
-# webbrowser.open("https://k-tai.watch.impress.co.jp/")
-# webbrowser.open("https://www.itmedia.co.jp/mobile/")
 webbrowser.open("https://www.nikkei.com/")
 webbrowser.open("https://feedly.com/i/my")
